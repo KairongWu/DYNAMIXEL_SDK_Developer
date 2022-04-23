@@ -19,6 +19,10 @@
 
 # Author: Ryu Woon Jung (Leon)
 
+# from 。model import *  此处的 。为当前文件夹路径， ..为上级文件夹路径
+# from ..dynamixel_sdk.port_handler import *
+
+#
 from .port_handler import *
 from .packet_handler import *
 from .group_sync_read import *

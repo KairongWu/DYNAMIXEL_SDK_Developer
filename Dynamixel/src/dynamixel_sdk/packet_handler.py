@@ -23,7 +23,7 @@ from .protocol1_packet_handler import *
 from .protocol2_packet_handler import *
 
 
-def PacketHandler(protocol_version):
+def PacketHandler(protocol_version):    # 通信包句柄，输入参数为协议版本
     # FIXME: float or int-to-float comparison can generate weird behaviour
     if protocol_version == 1.0:
         return Protocol1PacketHandler()

@@ -21,22 +21,22 @@
 
 from .robotis_def import *  # 加载变量库
 
-TXPACKET_MAX_LEN = 1 * 1024
-RXPACKET_MAX_LEN = 1 * 1024
+TXPACKET_MAX_LEN = 1 * 1024 # 发送最大长度
+RXPACKET_MAX_LEN = 1 * 1024 # 接收最大长度
 
-# for Protocol 2.0 Packet
-PKT_HEADER0 = 0
+# for Protocol 2.0 Packet   2.0 数据包格式
+PKT_HEADER0 = 0     # 帧头 3 byte
 PKT_HEADER1 = 1
 PKT_HEADER2 = 2
-PKT_RESERVED = 3
-PKT_ID = 4
-PKT_LENGTH_L = 5
-PKT_LENGTH_H = 6
-PKT_INSTRUCTION = 7
+PKT_RESERVED = 3    # 保留位
+PKT_ID = 4          # 设备 ID
+PKT_LENGTH_L = 5    # 数据长度低位
+PKT_LENGTH_H = 6    # 数据长度高位
+PKT_INSTRUCTION = 7 # 指令
 PKT_ERROR = 8
 PKT_PARAMETER0 = 8
 
-# Protocol 2.0 Error bit
+# Protocol 2.0 Error bit    错误位
 ERRNUM_RESULT_FAIL = 1  # Failed to process the instruction packet.
 ERRNUM_INSTRUCTION = 2  # Instruction error
 ERRNUM_CRC = 3  # CRC check error
