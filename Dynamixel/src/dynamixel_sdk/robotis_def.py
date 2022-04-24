@@ -21,7 +21,7 @@
 
 # 舵机相关参数定义
 
-BROADCAST_ID = 0xFE  # 254  广播ID
+BROADCAST_ID = 0xFE  # 254  广播ID    使所有连接的设备执行指令包
 MAX_ID = 0xFC  # 252        最大ID
 
 # Instruction for DXL Protocol  dxl 通信命令指令
